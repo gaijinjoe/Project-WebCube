@@ -477,7 +477,7 @@ module.exports = async function ssrRoute(req, res) {
   logger.info(
     `[WEBCUBE] [${requestId}] language: "${req.language}", hostname: "${
       req.hostname
-    }", url: "${req.url}", cookies: "${req.headers.cookie}"`
+    }", url: "${req.url}"`
   );
   try {
     Entry = require(exportedEntryCodePath);
